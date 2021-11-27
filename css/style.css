@@ -1,0 +1,13 @@
+
+h1{
+    color:red;
+    font-size: 20px;
+    border-bottom: 5px dashed rebeccapurple;
+    border-top: 5px solid royalblue;
+    outline: 5px ridge pink;
+}
+
+body{
+background-color: greenyellow;
+
+}
