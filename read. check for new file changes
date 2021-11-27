@@ -1,0 +1,6 @@
+1. check for new file changes 
+2. git status 
+3. check all the files apeared 
+4. git add .
+5. git commit -m "any mssage"
+6. git push origin main
