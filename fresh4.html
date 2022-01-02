@@ -3,18 +3,22 @@
         <title>Learning4</title>
 <style>
     body{
-       background:linear-gradient(to bottom right,yellow,red,indigo,green,white);
+       background:linear-gradient(to bottom right,yellow,red,indigo,green,white),url(images/foodimg.png);
+       background-blend-mode:screen;
     }
     h1{
        color:transparent; 
     text-decoration: dashed black;
     text-decoration-line: underline;
     font-size: 50px;
+    position: sticky;
+    
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: url(images/foodimg.png);
 -webkit-background-clip: text;
     
     border-top: 5px solid royalblue;
+    
         }
 
 #box1{
@@ -25,12 +29,18 @@ text-align:justify;
 border: 10px solid black;
 
 background-image: url(images/foodimg.png);
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+
 background-position: none;
 background-size: 50%;
 background-origin: content-box;
 background-clip: content-box;
 background:repeating-linear-gradient(to top right,red,indigo 15%,yellow 10%);
+mix-blend-mode: hard-light;
+position: relative;
+left: 150px;
+top:-30px;
+
 
 }
 

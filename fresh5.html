@@ -1,29 +1,195 @@
 <html>
     <head>
-        <title>Learning2</title>
+        <title>Learning5</title>
 <style>
-    h1{
-        color:red;
-    font-size: 20px;
-    border-bottom: 5px dashed rebeccapurple;
-    border-top: 5px solid royalblue;
-    
+    :root{
+        --most-used-color:crimson;
+        --head-font:Arial;
+        --ph-font:verdana;
+        
     }
+    body{
+        font-family: var(--ph-font);
+background:slateblue ;
+margin: 0;
+padding: 0;
+    }
+    #container{
+        border: 0px solid black;
+        width: 1000px;
+        background: white;
+        margin: 0 auto;
+    }
+    #Header{
+        background:var(--most-used-color);
+        color: whitesmoke;
+        text-shadow: 3px 3px darkred;
+    height: 90px;
+    font-family: var(--head-font);
+
+    }
+   #header h1{
+       padding: 30px 0 0 20px;
+
+    }
+    #content h2{
+        font-family: var(--head-font);
+        background: var(--most-used-color);
+    }
+
+       
+    #Menu{
+        background: lightskyblue;}
+        #menu ul{
+            margin: 0;
+            padding: 0;
+        }
+        #Menu li{
+             display: inline-block;  
+               }
+        #Menu li a
+        {
+             display:block;  
+        padding: 10px 13px; 
+        text-decoration: none;
+        color: black;
+      }
+      #Menu li a:hover{
+          background:var(--most-used-color);
+          color: whitesmoke;
+      }
+      #content{
+          width: 800px;
+          min-height: 400px;
+          padding: 10px;
+          float: left;
+           box-sizing: border-box;
+           font-family: var(--ph-font);
+      }
+        #sidebar{
+        background: lightsalmon;
+        width: 200px;
+        min-height: 400px;
+        float: right;
+       
+      }
+      #sidebar li {
+        text-decoration: none;
+        color: black;
+        padding: 8px 5px;
+        
+      }
+      #sidebar a {
+        text-decoration: none;
+        color: black;
+      }
+      #sidebar a:hover{
+          background: lightsalmon;
+          color: whitesmoke;
+      }
+    #Footer{
+        background: var(--most-used-color);
+     
+        --footertext-color:white;
+color:var(--footertext-color);
+        padding: 5px 10px;
+        text-align: right;
+        clear: both;
+        
+      
+    }
+    @media screen and (max-width:1020px){
+        #container{
+            width: 800px;
+        }
+        #content{
+            width: 80%;
+        }
+        #sidebar{
+            width: 18%;
+        }
+    }
+    @media screen and (max-width:810px){
+        #container{
+            width: 510px;
+        }
+        #content{
+            width: 65%;
+        }
+        #sidebar{
+            width: 32%;
+        }
+    }
+    @media screen and (max-width:510px){
+        #container{
+            width: auto;
+        }
+         #content{
+            width: 100%;
+            float: none;
+        }
+        #sidebar{
+            width: 100%;
+            float: none;
+        }
+        #header h1{
+       padding: 30px 0 0 0px;
+    text-align: center;
+    }
+    }
+
+   
 </style>
-
-
-
-
-
-
 
 
     </head>
 <body>
 
-<h1>list style & continue</h1>
-<div>
 
+<div>
+    <div id="container">
+
+    <div id="Header">
+<h1>Mast Kalandar</h1>
+
+        </div>
+
+    <div id="Menu">
+<ul>
+<li><a href="">HOME</a></li>
+<li><a href="">CONTACT US</a></li>
+<li><a href="">GALLERY</a></li>
+<li><a href="">ABOUT US</a></li>
+<li><a href="">CONTENT</a></li>
+</ul>
+
+
+    </div>
+    <div id="content">
+<h2>Design Basic LAyout</h2>
+<p>The where clauseis a filtering mechanism. It can be positioned almostanywherein a query expression,except it
+    cannot bethefirst or last clause. A where clause may appear either before or after a group clause depending on
+    whether you haveto filter thesourceelements before or after they are grouped.
+    If a specified predicateis notvalid for theelements in the data source,a compile-timeerror will result.This is one
+    health of thestrong type-checking provided by LINQ.
+    The where clauseis a filtering mechanism. It can be positioned almostanywherein a query expression,except it
+    cannot bethefirst or last clause. A where clause may appear either before or after a group clause depending on
+    whether you haveto filter thesourceelements before or after they are grouped.
+    </p>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTENT</a></li>
+            </ul>
+            
+    </div>
+    <div id="footer">
+Mast Kalandar CopyRiht2021@
+    </div>
 
 </div>
     

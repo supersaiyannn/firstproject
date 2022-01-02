@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Learning6</title>
+<style>
+    body{background: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 200px;
+        border-collapse: collapse;
+        cursor: cell;
+    }
+
+table , td , th {
+    border: 1px solid black;
+}
+td , th{
+    vertical-align: top;
+    padding: 10px 20px;
+}
+caption{
+    caption-side: top;
+}
+tr:nth-child(odd){
+    background-color: honeydew;
+}
+tr:nth-child(even){
+    background-color: gainsboro;
+}
+
+
+@media screen and (max-width: 1100px){
+body{
+background: violet;
+}
+    
+}@media screen and (max-width: 800px){
+body{
+background: skyblue;
+}
+    
+}
+@media screen and (max-width: 600px){
+body{
+background: orange;
+}
+    
+}
+@media screen and (max-width: 480px){
+body{
+background: greenyellow;
+}
+    
+}
+
+
+div{
+width: 100px;
+height: 100px;
+position: absolute;
+border: 1px solid black;
+font-size: 30px;
+
+}
+#box1{
+    background:lightskyblue;
+    top: 100px;
+    left: 350px;
+    z-index: 1;
+    overflow: auto;
+
+   
+
+}
+#box2{
+    background: peru;
+    top: 150px;
+    left: 900px;
+    z-index: 2;
+    overflow: auto;
+    resize: both;
+}
+   
+    #box3{
+    background:darkseagreen;
+    top: 200px;
+    left: 900px;
+z-index: 3;
+overflow: auto;
+    resize: both;
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1>CSS Z-Index </h1>
+<table>
+    <caption><b>Employee record</b></caption>
+    <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>savings</th>
+        </tr>
+    <tr>
+        <td>mohan</td>
+        <td>kumar</td>
+        <td>$100</td>
+        </tr>
+    <tr>
+        <td>salim</td>
+        <td>khan</td>
+        <td>$150</td>
+        </tr>
+        <tr>
+        <td>inder</td>
+        <td>singh</td>
+        <td>$300</td>
+        </tr>
+        <tr>
+        <td>peter</td>
+        <td>parker</td>
+        <td>$250</td>
+        </tr>
+        <td>peter</td>
+        <td>parker</td>
+        <td>$250</td>
+        </tr>
+        <td>peter</td>
+        <td>parker</td>
+        <td>$250</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+<div id ="box1">A</div>
+<div id ="box2">B</div>
+<div id ="box3">C</div>
+</body>
+
+</html>
