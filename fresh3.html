@@ -8,8 +8,19 @@
         background-repeat:no-repeat ;
         background-position: right top;
     background-attachment: fixed;
+    font: 19px / 25px arial;padding: 5px 0 0 10px;
+    counter-reset:my-counter 0;
     
     
+    
+    }
+    ol li::before{
+        content: "fruitname" counter(my-counter,upper-roman)" :-";
+        counter-increment: my-counter 1;
+        color:crimson;
+       
+        display: inline-block;
+        padding: 2px 10px;
     }
     h1{
         color:red;
@@ -34,14 +45,29 @@ width: 1000px;
 float: left;
 }
 #box3{
-    width: 100%;
+    width: 250px;
+    height: 400px;
+    margin: 50px 30px;
     border: 3px solid black;
-    background-color: gold;
+    
+    overflow: auto;
     clear: both;
     
     font-family: 'Open Sans', sans-serif,;
    
     
+}
+#box3::-webkit-scrollbar{
+    width: 15px;
+}
+#box3::-webkit-scrollbar-track{
+    border-radius: 10px;
+   background: #f5f5f5;
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+#box3::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+   background: linear-gradient(red ,yellow);
 }
 ul{
 list-style: none inside url(images/right.png);
@@ -56,7 +82,7 @@ ul li{
 }
 
 ol{
-list-style:upper-roman inside ;
+list-style:none ;
 }
 
 </style>

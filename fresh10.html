@@ -1,32 +1,83 @@
 <html>
     <head>
-        <title>Learning9</title>
+        <title>Learning10</title>
 <style>
     body{
+        background:gray;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-.base{
-    width: 350px;
-    height: 250px;
-    background: grey;
-    font-size: 18px;
-    text-align: center;
-    margin: 100px 0 0 100px;
-    perspective: 800px;
+    h1{
+        padding: 0 0 0 40px;
+    }
+.container{
+    background:#eee;
+    width: 800px;
+    height: 800px;
+    margin: 45px auto 0;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: [Header-start]110px[Header-end] 60px 100px 350px 50px  ;
+    grid-gap:10px ;
+    align-items: none;
+    justify-content: center;
+    align-content: space-around;
+    grid-auto-flow: column dense;
+}
+.Header{
+    background: orangered;
+    grid-row:Header-start / Header-end ;
+    grid-column: 1/4;
 }
 
-
-
-#box{width: 350px;
-    height: 250px;
-
-    background:tomato;
-    transform:rotatey(70deg) ;
+.Menu{
+    background: yellowgreen;
+   grid-row:2/3 ;
+   grid-column:1/-1 ;
+}
+.box1{
+    background: mediumpurple;
     
+    order: 1;
+    place-self: start stretch;
+}
+.box2{
+    background: hotpink;
+    align-self: center;
+   justify-self: stretch;
+    
+    
+}
+.Sidebar{
+    background: royalblue;
+    grid-row: 3/5;
    
 }
+.Content{
+    background: skyblue;
+    display: grid;
+    grid-row: 4/5;
+   
+    grid-column: 1/3;
+  grid-template-columns: .5fr 1fr;
+  grid-gap:10px
+}
+.Content > div{
+background: white;
+color: red;
+padding: 10px;
 
-
+}
+.Footer{
+    background: gold;
+    grid-row: 5/6;
+   
+    grid-column: 1/-1;
+}
+.items{
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+}
 
 
     </style>
@@ -34,11 +85,20 @@
 </head>
 
 <body>
-<h1>CSS:ClipPath</h1>
+<h1>CSS:Gridd</h1>
 
-<div class="base">
+<div class="container">
 
-<div id="box">mastkalandar</div>
+<div class="items header">Header</div>
+<div class="items menu">Menu</div>
+<div class="items box1">box1</div>
+<div class="items box2">box2</div>
+<div class="items sidebar">Sidebar</div>
+<div class="items content">
+    <div class="subcontent">A</div>
+        <div class="subcontent">B</div>
+</div>
+<div class="items footer">Footer</div>
 
 </div>
 
